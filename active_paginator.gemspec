@@ -11,16 +11,16 @@ Gem::Specification.new do |s|
   s.email       = ["rafaelplaurindo@gmail.com"]
   s.homepage    = "https://rubygems.org/gems/active_paginator-rails"
   s.summary     = "Summary of ActivePaginator."
-  s.description = "Description of ActivePaginator."
+  s.description = "A simple but very useful paginator for ActiveRecord."
   s.license     = "MIT"
 
-  s.files = Dir["{bin,config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "basicss.gemspec"]
+  s.files = Dir["{config,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.md", "active_paginator.gemspec"]
   s.require_paths = %w{config lib vendor}
   s.test_files = Dir["test/**/*"]
 
   # needs to work like "rake"
   ACTIVE_PAGINATOR_RUNTIME_DEPENDENCIES = {
-    "rails": "~> 5"
+    "rails": "~> 3"
   }
 
   # needs to run a specific task
